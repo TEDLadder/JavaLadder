@@ -1,0 +1,21 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.sunladder.reserved.tfinal.innerclass;
+
+import com.sunladder.reserved.tfinal.innerclass.FinalForInnerClass.Outer;
+
+class FinalForInnerClass$Outer$2 extends Thread {
+	
+    // $FF: synthetic field
+    final Outer this$0;
+
+    FinalForInnerClass$Outer$2(Outer var1) {
+        this.this$0 = var1;
+    }
+
+    public void run() {
+    }
+}

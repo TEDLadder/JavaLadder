@@ -1,0 +1,41 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.sunladder.reserved.tfinal.innerclass;
+
+class FinalForInnerClass$Outer {
+    public static final int outerNum1 = 1;
+    public static final String outerString1 = "str1";
+    public static final Object outerObj1 = new Object();
+    public final int outerNum2 = 2;
+    public final String outerString2 = "str2";
+    public final Object outerObj2 = new Object();
+    public int outerNum3 = 3;
+    public String outerString3 = "str3";
+    public Object outerObj3 = new Object();
+
+    FinalForInnerClass$Outer() {
+    }
+
+    void outerRun() {
+        final Object var3 = new Object();
+        final int var4 = -this.outerNum3;
+        final String var5 = this.outerString3.concat("*");
+        final Object var6 = new Object();
+        (new Thread() {
+            public void run() {
+                System.out.println("1 str1 " + FinalForInnerClass$Outer.outerObj1);
+                System.out.println("2 str2 " + FinalForInnerClass$Outer.this.outerObj2);
+                System.out.println(FinalForInnerClass$Outer.this.outerNum3 + " " + FinalForInnerClass$Outer.this.outerString3 + " " + FinalForInnerClass$Outer.this.outerObj3);
+                System.out.println("0 methodString " + var3);
+                System.out.println(var4 + " " + var5 + " " + var6);
+            }
+        }).start();
+        (new Thread() {
+            public void run() {
+            }
+        }).start();
+    }
+}
