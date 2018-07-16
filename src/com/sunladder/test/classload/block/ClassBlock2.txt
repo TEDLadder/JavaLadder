@@ -1,0 +1,56 @@
+Classfile /D:/ASWorkSpace/_mine/JavaLadder/src/com/sunladder/test/classload/block/TestClassBlock$Test2.class
+  Last modified 2018-7-16; size 385 bytes
+  MD5 checksum fab76ea5c37110057e9b94a840896eb3
+  Compiled from "TestClassBlock.java"
+class com.sunladder.test.classload.block.TestClassBlock$Test2
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#13         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#14         // com/sunladder/test/classload/block/TestClassBlock$Test2.value:I
+   #3 = Class              #16            // com/sunladder/test/classload/block/TestClassBlock$Test2
+   #4 = Class              #19            // java/lang/Object
+   #5 = Utf8               value
+   #6 = Utf8               I
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               SourceFile
+  #12 = Utf8               TestClassBlock.java
+  #13 = NameAndType        #7:#8          // "<init>":()V
+  #14 = NameAndType        #5:#6          // value:I
+  #15 = Class              #20            // com/sunladder/test/classload/block/TestClassBlock
+  #16 = Utf8               com/sunladder/test/classload/block/TestClassBlock$Test2
+  #17 = Utf8               Test2
+  #18 = Utf8               InnerClasses
+  #19 = Utf8               java/lang/Object
+  #20 = Utf8               com/sunladder/test/classload/block/TestClassBlock
+{
+  public int value;
+    descriptor: I
+    flags: ACC_PUBLIC
+
+  com.sunladder.test.classload.block.TestClassBlock$Test2();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_2
+         6: putfield      #2                  // Field value:I
+         9: aload_0
+        10: iconst_1
+        11: putfield      #2                  // Field value:I
+        14: return
+      LineNumberTable:
+        line 14: 0
+        line 17: 4
+        line 20: 9
+}
+SourceFile: "TestClassBlock.java"
+InnerClasses:
+     static #17= #3 of #15; //Test2=class com/sunladder/test/classload/block/TestClassBlock$Test2 of class com/sunladder/test/classload/block/TestClassBlock

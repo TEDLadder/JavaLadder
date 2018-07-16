@@ -1,20 +1,26 @@
-package com.sunladder.dailytest;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
+package com.sunladder.test.classload;
 
 public class Test {
 
 
     static class A {
 
-        int i;
-        static int a = 1;
-
         static {
             a = 2;
+            System.out.println("A static block");
+        }
+
+        public static int a = 1;
+
+        static {
+            a = 3;
+            System.out.println("A static block");
+        }
+
+        int i;
+
+        {
+            System.out.println("A block");
         }
 
         public A(int a) {
@@ -33,6 +39,13 @@ public class Test {
 
     static class B extends A {
 
+        static {
+            System.out.println("B static block");
+        }
+
+        {
+            System.out.println("B block");
+        }
 
         public B(int a) {
             super(a);
@@ -50,20 +63,7 @@ public class Test {
         }
     }
 
-    private static List<String> mlist = new ArrayList<>();
-
     public static void main(String[] args) {
-        Class<? extends Test> aClass = Test.class;
-        try {
-            Field field = aClass.getDeclaredField("mlist");
-            Class<?> type = field.getType();
-            Class<? extends List> aClass1 = type.asSubclass(List.class);
-
-            Type genericType = field.getGenericType();
-
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        System.out.println(new A(1).a);
     }
 }

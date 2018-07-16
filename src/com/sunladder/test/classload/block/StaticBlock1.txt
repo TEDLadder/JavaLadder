@@ -1,0 +1,64 @@
+Classfile /D:/ASWorkSpace/_mine/JavaLadder/src/com/sunladder/test/classload/block/TestStaticBlock$Test1.class
+  Last modified 2018-7-16; size 436 bytes
+  MD5 checksum dbda8cbb27ac55c0b06b884a7d7dc718
+  Compiled from "TestStaticBlock.java"
+class com.sunladder.test.classload.block.TestStaticBlock$Test1
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#14         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#15         // com/sunladder/test/classload/block/TestStaticBlock$Test1.value:I
+   #3 = Class              #17            // com/sunladder/test/classload/block/TestStaticBlock$Test1
+   #4 = Class              #20            // java/lang/Object
+   #5 = Utf8               value
+   #6 = Utf8               I
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               <clinit>
+  #12 = Utf8               SourceFile
+  #13 = Utf8               TestStaticBlock.java
+  #14 = NameAndType        #7:#8          // "<init>":()V
+  #15 = NameAndType        #5:#6          // value:I
+  #16 = Class              #21            // com/sunladder/test/classload/block/TestStaticBlock
+  #17 = Utf8               com/sunladder/test/classload/block/TestStaticBlock$Test1
+  #18 = Utf8               Test1
+  #19 = Utf8               InnerClasses
+  #20 = Utf8               java/lang/Object
+  #21 = Utf8               com/sunladder/test/classload/block/TestStaticBlock
+{
+  public static int value;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  com.sunladder.test.classload.block.TestStaticBlock$Test1();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #2                  // Field value:I
+         4: iconst_2
+         5: putstatic     #2                  // Field value:I
+         8: return
+      LineNumberTable:
+        line 7: 0
+        line 10: 4
+        line 11: 8
+}
+SourceFile: "TestStaticBlock.java"
+InnerClasses:
+     static #18= #3 of #16; //Test1=class com/sunladder/test/classload/block/TestStaticBlock$Test1 of class com/sunladder/test/classload/block/TestStaticBlock
