@@ -1,0 +1,73 @@
+Classfile /F:/SyFinal/_mine/JavaLadder/src/com/sunladder/test/classload/ploy/TestPoly$Parent.class
+  Last modified 2018-7-17; size 534 bytes
+  MD5 checksum 9c2dd0af19cd4d88e5b6c11b94a64651
+  Compiled from "TestPoly.java"
+class com.sunladder.test.classload.ploy.TestPoly$Parent
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #7.#15         // java/lang/Object."<init>":()V
+   #2 = Methodref          #6.#16         // com/sunladder/test/classload/ploy/TestPoly$Parent.print:()V
+   #3 = Fieldref           #17.#18        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = String             #19            // Parent
+   #5 = Methodref          #20.#21        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #6 = Class              #23            // com/sunladder/test/classload/ploy/TestPoly$Parent
+   #7 = Class              #25            // java/lang/Object
+   #8 = Utf8               <init>
+   #9 = Utf8               ()V
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               print
+  #13 = Utf8               SourceFile
+  #14 = Utf8               TestPoly.java
+  #15 = NameAndType        #8:#9          // "<init>":()V
+  #16 = NameAndType        #12:#9         // print:()V
+  #17 = Class              #26            // java/lang/System
+  #18 = NameAndType        #27:#28        // out:Ljava/io/PrintStream;
+  #19 = Utf8               Parent
+  #20 = Class              #29            // java/io/PrintStream
+  #21 = NameAndType        #30:#31        // println:(Ljava/lang/String;)V
+  #22 = Class              #32            // com/sunladder/test/classload/ploy/TestPoly
+  #23 = Utf8               com/sunladder/test/classload/ploy/TestPoly$Parent
+  #24 = Utf8               InnerClasses
+  #25 = Utf8               java/lang/Object
+  #26 = Utf8               java/lang/System
+  #27 = Utf8               out
+  #28 = Utf8               Ljava/io/PrintStream;
+  #29 = Utf8               java/io/PrintStream
+  #30 = Utf8               println
+  #31 = Utf8               (Ljava/lang/String;)V
+  #32 = Utf8               com/sunladder/test/classload/ploy/TestPoly
+{
+  public com.sunladder.test.classload.ploy.TestPoly$Parent();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokevirtual #2                  // Method print:()V
+         8: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 4
+        line 9: 8
+
+  void print();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #4                  // String Parent
+         5: invokevirtual #5                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 8
+}
+SourceFile: "TestPoly.java"
+InnerClasses:
+     static #19= #6 of #22; //Parent=class com/sunladder/test/classload/ploy/TestPoly$Parent of class com/sunladder/test/classload/ploy/TestPoly
